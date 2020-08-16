@@ -1,0 +1,9 @@
+set xdata time
+set timefmt "%d/%m/%y %H:%M:%S"
+set format x "%H:%M:%S \n%d/%m"
+set format y "%.0f"
+set yrange [ "57531805":"57532304" ]
+set xrange [ "15/08/20 20:24:10":"15/08/20 20:58:10" ]
+set ylabel "Ledger Sequence"
+set xlabel "Current Time"
+plot "Task_seq_n_time.txt" using 1:3  with lines linecolor 6
